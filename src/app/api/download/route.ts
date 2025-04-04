@@ -1,13 +1,12 @@
 import { NextResponse } from "next/server";
-import { YtDlp } from "ytdlp-nodejs";
+import os from "os";
 
 export async function GET() {
-  const ytdlp = new YtDlp();
-
-  const checkYtdlp = await ytdlp.checkInstallationAsync();
+  const platform = os.platform();
+  const arch = os.arch();
 
   return new NextResponse(
-    JSON.stringify({ message: "Hello World", ytdlp, checkYtdlp }),
+    JSON.stringify({ message: "Hello World", platform, arch }),
     {
       status: 200,
       headers: { "Content-Type": "application/json" },
