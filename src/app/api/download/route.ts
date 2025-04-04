@@ -1,10 +1,8 @@
 import { NextResponse } from "next/server";
-import { YtDlp } from "ytdlp-nodejs";
+import { BIN_DIR } from "ytdlp-nodejs";
 
 export async function GET() {
-  const ytdlp = new YtDlp();
-
-  return new NextResponse(JSON.stringify({ message: "Hello World", ytdlp }), {
+  return new NextResponse(JSON.stringify({ message: "Hello World", BIN_DIR }), {
     status: 200,
     headers: { "Content-Type": "application/json" },
   });
