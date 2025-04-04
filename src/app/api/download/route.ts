@@ -5,12 +5,14 @@ export async function GET() {
   const platform = os.platform();
   const arch = os.arch();
 
+  console.log(process.env.INIT_CWD);
+
   return new NextResponse(
     JSON.stringify({
       message: "Hello World",
+      hello: process.env.INIT_CWD,
       platform,
       arch,
-      test: process.env.INIT_CWD,
     }),
     {
       status: 200,
