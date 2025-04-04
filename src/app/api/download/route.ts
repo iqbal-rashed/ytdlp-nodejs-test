@@ -6,7 +6,12 @@ export async function GET() {
   const arch = os.arch();
 
   return new NextResponse(
-    JSON.stringify({ message: "Hello World", platform, arch }),
+    JSON.stringify({
+      message: "Hello World",
+      platform,
+      arch,
+      init: process.env.INIT_CWD,
+    }),
     {
       status: 200,
       headers: { "Content-Type": "application/json" },
