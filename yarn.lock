@@ -2839,3 +2839,8 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+
+ytdlp-nodejs@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/ytdlp-nodejs/-/ytdlp-nodejs-2.0.5.tgz#5f8f17c8592dbe5058582b5dcb4d538f5d4b35c2"
+  integrity sha512-n3FGUpBl8ARMMCJ6qpfuKepvhZUP6lqGtChcdUVEw2nlVTwYXw7mfxrC7V+GxWBw/zT2ZlrIA0XO5rPFp8GRBQ==
