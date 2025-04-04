@@ -10,7 +10,7 @@ export async function GET() {
       message: "Hello World",
       platform,
       arch,
-      init: process.env.INIT_CWD,
+      test: process.env.INIT_CWD,
     }),
     {
       status: 200,
