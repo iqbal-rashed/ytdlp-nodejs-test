@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "node ./node_modules/ytdlp-nodejs/dist/download.js"
   },
   "dependencies": {
     "next": "15.2.4",
