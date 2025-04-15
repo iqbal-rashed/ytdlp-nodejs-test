@@ -13,6 +13,8 @@ export async function GET() {
       BIN_DIR,
       items,
       node_modules_path,
+      dirname:__dirname,
+      fileName:__filename
     }),
     {
       status: 200,
